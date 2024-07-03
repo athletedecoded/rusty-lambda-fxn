@@ -1,0 +1,14 @@
+[package]
+name = "rusty-lambda-fxn"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+dotenv = "0.15"
+serde = "1.0.203"
+lambda_runtime = "0.11.2"
+tokio = { version = "1", features = ["macros", "full"] }
+tracing = { version = "0.1", features = ["log"] }
+tracing-subscriber = { version = "0.3", default-features = false, features = ["fmt", "json"] }
+aws_lambda_events = { version = "0.15.1", default-features = false, features = ["s3"] }
+aws-config = "1.5.2"
